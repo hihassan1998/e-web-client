@@ -190,9 +190,10 @@ nav {
   display: "flex";
   justify-content: "space-between";
   align-items: "center";
-  padding: "12px 24px";
-  background: "#111";
-  color: "#fff";
+  background-color: #c8e6c9;
+  color: "#ccc";
+  padding: 15px;
+
 }
 
 logo {
@@ -207,10 +208,12 @@ logoText {
 
 ;
 
-links {
-  display: "flex";
-  gap: "15px";
-  align-items: "center";
+.links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 link {

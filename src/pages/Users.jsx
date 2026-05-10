@@ -6,7 +6,7 @@ export default function Users() {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await API.get("/users/users");
+      const res = await API.get("/users");
       setUsers(Array.isArray(res.data) ? res.data : []);
     };
 
