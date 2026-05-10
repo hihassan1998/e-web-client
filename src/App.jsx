@@ -15,29 +15,12 @@ import "./App.css";
 function App() {
 
 
-  // useEffect(() => {
-  //   const token = localStorage.getItem("token");
 
-  //   if (token) {
-  //     console.log("✅ User already logged in");
-  //     setIsLoggedIn(true);
-  //   } else {
-  //     console.log("❌ User not logged in");
-  //     setIsLoggedIn(false);
-  //   }
-  // }, []);
 
   return (
     <>
       <Navbar />
 
-      {/* <div className="auth-status">
-        {isLoggedIn ? (
-          <p>✅ Logged in</p>
-        ) : (
-          <p>❌ Not logged in</p>
-        )}
-      </div> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -50,15 +33,16 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-        {/* protected routes */}
+        {/* up protected routes for experiemnts */}
         <Route
           path="/properties"
           element={
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <Properties />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           }
         />
+
 
         <Route
           path="/users"

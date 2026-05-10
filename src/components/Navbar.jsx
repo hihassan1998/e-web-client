@@ -28,11 +28,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">
+      <div className="title">
         <Link to="/">Earnsome</Link>
       </div>
 
-      <div className="links">
+      <div className="navigation">
         <Link to="/" className="link">Home</Link>
 
         <Link to="/properties" className="link">
